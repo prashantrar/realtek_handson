@@ -34,11 +34,11 @@ char ssid[] = "IOT_MERCURY_59E0";     // your network SSID (name)
 char pass[] = "1234567890";  // your network password
 int status  = WL_IDLE_STATUS;    // the Wifi radio's status
 
-char mqttServer[] = "m10.cloudmqtt.com";
+char mqttServer[] = "m13.cloudmqtt.com";
 
 char clientId[]       = BOARD_ID;
-char clientUser[]     = "qjetscfh";
-char clientPass[]     = "0M49osqO3srw";
+char clientUser[]     = "trdvfbix";
+char clientPass[]     = "PLqiGnVHQdiX";
 
 WiFiClient wifiClient;
 PubSubClient client(wifiClient);
@@ -74,7 +74,7 @@ void setup()
     delay(10000);
   }
   dht.begin();
-  client.setServer(mqttServer, 12670);
+  client.setServer(mqttServer, 13116);
 
   // Allow the hardware to sort itself out
   delay(1500);
